@@ -24,11 +24,6 @@ public class UserDaoImpl implements web.dao.UserDAO {
     }
 
     @Override
-    public void addUser(User user) {
-        entityManager.persist(user);
-    }
-
-    @Override
     public void removeUser(long id) {
         entityManager.remove(getUserById(id));
     }
